@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+import datetime
+def TimeSleep(fn):
+    def wraper():
+        if 7<datetime.datetime.now().hour < 22:
+            fn()
+        else:
+            print("hishshsh neighbour are sleep")
+    return wraper
+@TimeSleep
+def PlayMusic():
+   print("hhhhhhaaaaaaaaaa aaaaaaaa pojcccccc")
+PlayMusic()
+
